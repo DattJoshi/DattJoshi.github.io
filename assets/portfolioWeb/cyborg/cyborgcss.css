@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #212529;
+    font-size: 14px;
+}
+
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+:root {
+    --bg-color: #1f2122;
+    --pink-color: #e75e8d;
+    --light-pink-color: #ec6090;
+    --light-gray-color: #666;
+    --dark-gray-color: #27292a;
+    --white-color: #fff;
+}
+
+::selection{
+    background-color: var(--light-pink-color);
+}
+
+
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* universal btn */
+
+.btn {
+    display: inline-block;
+    background-color: var(--pink-color);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--pink-color);
+}
+
+/* BAckgrounds */
+
+.grey-bg {
+    background-color: var(--dark-gray-color);
+    padding: 60px;
+    border-radius: 23px;
+}
+
+.dark-bg {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: var(--bg-color);
+    border-radius: 23px;
+}
+
+/* left and right */
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/* title style */
+.title {
+    color: var(--pink-color);
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+.title span {
+    color: white;
+    text-decoration: underline;
+}
+
+/*--------------------------------header------------------------------------------------------------------ */
+
+.header {
+    padding: 30px 0px;
+    position: relative;
+
+
+}
+
+.logo-box {
+    float: left;
+}
+
+.search {
+  float: left;
+  margin-left: 100px;
+
+}
+
+#srch1 {
+    text-align: left;
+    background-color: var(--dark-gray-color);
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* menu */
+
+.menu {
+    float: right;
+
+}
+
+
+
+.menu .menu-li {
+    float: left;
+   
+}
+
+
+
+.menu>li>a {
+    display: inline-block;
+    color: var(--light-gray-color);
+    padding: 10px 20px;
+}
+
+.menu>li>a:hover ,
+ul.menu>li.active a
+ {
+    color: var(--pink-color);
+}
+
+li.profile img{
+    width: 30px ;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+
+/* toggle */
+.toggle {
+    width: 30px;
+    display: none;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: var(--pink-color);
+}
+
+#chk1 {
+    display: none;
+}
+
+/* media query for 1000px display */
+
+@media screen and (max-width:1000px) {
+    .container {
+        width: 750px;
+    }
+
+    /* header */
+
+    .header {
+        background-color: white;
+        padding-bottom: 0px;
+        
+    }
+
+    .header a.logo-box{margin: 0px 0px 20px 20px;}
+
+    input {
+        display: none;
+    }
+
+
+    .menu {
+        display: none;
+        width: 100%;
+        text-align: center; 
+              
+    }
+
+    .menu .menu-li {
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid #66666679;
+
+    }
+
+
+    .menu li.profile .btn {
+        background-color: transparent; 
+        text-decoration: none;
+        background-color: white;
+        border-radius: 0;
+        text-align: center;
+    }
+
+  .profile .btn img{
+        visibility: hidden;
+    }
+
+
+    .toggle{
+        display: inline-block;
+    }
+
+    #chk1:checked+.menu {
+        display: block;
+        
+    }
+}
+
+
+
+
+
+
+
+/* -------------------------------banner-most popular----------------------------------- */
+.main-banner {
+    background-image: url(images/banner-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 380px;
+    border-radius: 23px;
+    padding: 80px 60px;
+    color: white;
+}
+
+.main-banner h5 {
+    font-size: 20px;
+    font-weight: 100px;
+    margin-bottom: 25px;
+}
+
+.main-banner span {
+    color: var(--pink-color);
+}
+
+.main-banner h1 {
+    font-size: 45px;
+}
+
+/* media query for 765px display */
+
+
+@media screen and (max-width:765px) {
+
+    .container {
+        width: 100%;
+    }
+
+
+
+    .main-banner {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+/* most-popular */
+
+.most-popular {
+
+    position: relative;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-4 {
+    width: 22%;
+    background-color: var(--dark-gray-color);
+    margin: 12px;
+    display: inline-block;
+
+}
+
+.item {
+    background-color: var(--dark-gray-color);
+    padding: 30px 15px;
+    border-radius: 23px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.item-img {
+    border-radius: 23px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+h4.item-title {
+    display: inline-block;
+}
+
+.item-title span {
+    color: var(--light-gray-color);
+    font-weight: lighter;
+}
+
+.popular-rating {
+    float: right;
+}
+
+.fa-star {
+    color: yellow;
+    margin-right: 3px;
+}
+
+.fa-download {
+    color: var(--pink-color);
+    margin-right: 3px;
+
+}
+
+/* popular-btn */
+
+.discover-popular {
+    position: absolute;
+    bottom: -15px;
+    left: 40%;
+    color: wheat;
+}
+
+/* queries */
+
+/* media query for 1000px display */
+
+@media screen and (max-width:1000px) {
+   
+
+    /* most popular */
+
+    .most-popular .col-4 {
+        width: 40%;
+        display: inline-block;
+    }
+}
+
+/* media query for 580px display */
+
+
+@media screen and (max-width:580px) {
+    .most-popular .col-4 {
+        width: 100%;
+    }
+
+}
+
+/* --------------library----------------- */
+
+.library {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.library>.title {
+    padding: 30px;
+}
+
+.library-img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 23px;
+}
+
+.library ul {
+    display: block;
+    align-items: center;
+    border-bottom: 0.1px solid var(--light-gray-color);
+
+}
+
+.library .library-li {
+    display: block;
+    float: left;
+    width: 16.66%;
+    color: white;
+    line-height: 30px;
+    padding: 20px 0px;
+}
+
+
+.library ul li span {
+    color: var(--light-gray-color);
+}
+
+.lib-btn {
+    position: absolute;
+    bottom: -20px;
+    left: 40%;
+}
+
+/* queries */
+
+/* media query for 1000px display */
+
+@media screen and (max-width:1000px) {
+   
+
+
+    /* library-media */
+    .library .library-li {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .library-li:first-child{padding: 0px;}
+
+    .library ul{
+        padding-top: 30px;
+    }
+
+    .lib-btn{
+        left: 30%;
+    }
+}
+
+/* media query for 765px display */
+
+
+@media screen and (max-width:765px) {
+
+
+    /* library */
+
+    .library .library-li {
+        text-align: center;
+    }
+
+    .library .library-li:last-child,
+    .library .library-li:first-child {
+        width: 100%;
+    }
+
+
+}
+
+
+/* footer */
+
+p.footer {
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 15px;
+}
+
+
+/* BROWSE PAGE */
+
+/* menu , footer, featured games(form most popular) same */
+
+/* Featured games */
+
+.featured-games .dark-bg{
+    margin-top: 10px;
+}
+.featured-games{
+    width: 70%;
+}
+
+.featured-games .col-4{
+    width: 29%;
+    background-color: transparent;
+}
+

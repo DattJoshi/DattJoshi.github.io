@@ -1,0 +1,660 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.devider {
+    display: block;
+    width: 100%;
+    border-bottom: 4px double rgba(0, 0, 0, 0.23);
+}
+
+/* -------------------header------------------------------- */
+
+.header {
+    background-color: #fff;
+    width: 100%;
+    font-weight: 700;
+}
+
+.header ul.menu {
+    float: right;
+
+}
+
+.header ul.menu>li {
+    float: left;
+}
+
+.header ul.menu>li>a {
+    display: block;
+    padding: 30px 20px;
+    color: black;
+
+}
+
+
+.header ul.menu>li>a:hover {
+    background-color: #00c788;
+    color: #fff;
+}
+
+/* -----------------------slider----------------------------- */
+
+.slider {
+    min-width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    position: relative;
+}
+
+.slider>img {
+    padding: 50px 0px;
+
+}
+
+.slider .cloud-bg {
+    background-image: url(images/slider/cloud.png);
+    background-size: cover;
+    background-color: rgba(12, 19, 29, 0.94);
+    height: 100%;
+    width: 100%;
+
+}
+
+.slider .comp-bg {
+    background-image: url(images/slider/back.png);
+    width: 100%;
+    height: 100%;
+}
+
+.slider .slider-dots {
+    display: block;
+    height: 5px;
+    width: 5px;
+    margin: 10px 5px;
+    background-color: red;
+    float: left;
+}
+
+.dots {
+    margin-left: 50%;
+}
+
+.slider label.arrow {
+    display: block;
+    height: 37px;
+    width: 27px;
+    background-image: url(images/slider/arrows.png);
+    position: absolute;
+    position: top right;
+    top: 50%;
+    right: 2%;
+    transform: rotate(180deg);
+    z-index: 1000;
+
+}
+
+#left-arrow {
+    left: 2%;
+    transform: rotate(360deg);
+
+}
+
+/* -----------------------about------------------------- */
+
+.about {
+    width: 100%;
+    background-color: #323A45;
+    text-align: center;
+}
+
+.about .abouth1 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.about .aboutpara1 {
+    padding-bottom: 20px;
+}
+
+
+
+.about .aboutpara2 {
+    padding: 30px 0;
+}
+
+.about-img {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+/* ----------------who we are----------------------------------- */
+
+.who-we-are {
+    width: 100%;
+    height: 500px;
+    background-image: url(images/parlex.png);
+    background-attachment: fixed;
+
+}
+
+.pink-bg {
+    /* background-color: rgba(128, 11, 54, 0.50); */
+    background-color: rgba(179, 105, 149, 0.70);
+    height: 100%;
+
+}
+
+
+.wovr-details {
+    padding: 20px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.who-we-are .wovr-title {
+    font-size: 60px;
+    font-weight: lighter;
+    margin: 30px 0;
+    padding-bottom: 20px;
+}
+
+.devider.wovr {
+    border-color: white;
+}
+
+.wovr-para {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #d6d6d6;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.btn2 {
+    background-color: #323A45;
+    border: none;
+}
+
+.btn2:hover {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.btn1:hover {
+    background-color: #323A45;
+    border: none;
+}
+
+/* ----------------------------------buy-now---------------------------------------- */
+
+.buy {
+    width: 100%;
+    background-color: #303030;
+    padding: 80px 0px;
+
+}
+
+.buy-now {
+    border: 1px solid #fff;
+    padding: 20px;
+
+}
+
+.buy-now .buy-details {
+    border-right: 1px solid #fff;
+}
+
+.buy-now .buy-title {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.buy-now .buy-para {
+    line-height: 24px;
+    color: #d6d6d6;
+    font-size: 15px;
+}
+
+.buy-now .buy-btn {
+    padding-top: 25px;
+
+}
+
+.buy-btn .buy-btn1 {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.buy-btn .buy-btn1:hover {
+    background-color: tomato;
+    color: black;
+}
+
+/* ---------------------------------------------services------------------------------- */
+
+.services {
+    background-image: url(images/parlex.png);
+    width: 100%;
+    text-align: center;
+    background-attachment: fixed;
+
+
+}
+
+.dark-pink-bg {
+    background: linear-gradient(#800b36, rgba(128, 11, 54, 0.50) 56%);
+}
+
+.service-title {
+    padding-top: 50px;
+}
+
+.devider.srv {
+    border-color: white;
+}
+
+.services .service-p {
+    padding: 30px 0px 50px;
+}
+
+.service-img-title {
+    padding: 30px 0px 80px;
+    font-size: 20px;
+}
+
+/* -----------------OUR PROCESS----------------------------- */
+
+.our-process {
+    background-image: linear-gradient(#0ac791, #00c788);
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.our-process-title {
+    padding-bottom: 30px;
+}
+
+.devider.our-process-d {
+    margin-bottom: 20px;
+}
+
+.our-process>p {
+    padding-bottom: 30px;
+}
+
+/* process-icon section */
+.our-process .process {
+    padding-top: 30px;
+    text-align: center;
+}
+
+a.process-icon {
+    display: block;
+    height: 90px;
+    width: 90px;
+    color: #fff;
+    font-size: 45px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 17px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+a.process-icon:hover {
+    color: #80d1b9;
+    border-color: #80d1b9;
+    background-color: white;
+    transform: rotateY(360deg);
+
+}
+
+.process h4.process-h4 {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+/* ------------------------------------portfolio----------------------------- */
+
+.portfolio {
+    background-image: url(images/parlex.png);
+    width: 100%;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.green-bg {
+    background-image: linear-gradient(rgba(72, 207, 173, 0.99), rgba(72, 207, 173, 0.78));
+    padding-bottom: 50px;
+}
+
+.portfolio-title {
+    padding-top: 80px;
+}
+
+.portfolio p {
+    padding: 30px 0;
+}
+
+.portfolio-img {
+    border: 12px solid white;
+    scale: 80%;
+    box-shadow: 5px 5px 0px 2px #20ae61;
+    position: relative;
+}
+
+.portfolio-img img {
+    display: block;
+    width: 100%;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #800b36;
+    scale: 0;
+}
+
+.portfolio-img:hover .img-overlay {
+    scale: 1;
+    transform: translate(12px, 12px);
+    transition: transform 0.3s, opacity 0.3s;
+
+}
+
+/* our plan */
+
+.our-plan {
+    background-image: linear-gradient(#00b8b1, rgba(7, 148, 143, 0.92));
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.our-plan .our-plan-title {
+    padding: 20px;
+}
+
+.our-plan .plan-para {
+    padding: 20px 0px;
+}
+
+/* plans */
+
+.our-plan ul li.plan-list {
+    display: block;
+    padding: 15px;
+}
+
+.our-plan ul li p {
+    color: black;
+}
+
+
+.our-plan ul li.plan-list:nth-child(6) {
+    border-bottom: 1px dashed white;
+    margin-bottom: 20px;
+}
+
+.our-plan ul li.plan-list:nth-child(7) {
+    border-bottom: 3px solid;
+    padding-bottom: 30px;
+}
+
+.our-plan ul li.plan-list a {
+    color: black;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+.plan-1 {
+    border: 1px solid #ffce54;
+}
+
+.yellow {
+    background-color: #ffce54;
+}
+
+
+
+
+.plan-2 {
+    border: 1px solid #ed5565;
+}
+
+.red {
+    background-color: #ed5565;
+}
+
+
+
+.plan-3 {
+    border: 1px solid #a0d468;
+}
+
+.green {
+    background-color: #a0d468;
+}
+
+
+
+
+.plan-4 {
+    border: 1px solid #fc6e51;
+}
+
+.tomato {
+    background-color: #fc6e51;
+}
+
+ul[class *="plan-"] {
+    transition: 0.5s;
+}
+
+ul[class *="plan-"]:hover {
+    scale: 0.8;
+}
+
+/* team */
+
+.team{
+    width: 100%;
+    background-image: url(images/team.png);
+    text-align: center;
+    background-attachment: fixed;
+
+}
+
+.team-greybg{
+    background-color: rgba(0, 0, 0, 0.575);
+    z-index: -1;
+    padding: 50px 0px;
+}
+
+.team .team-title{
+    padding: 30px 0px;
+}
+.team .devider{
+    border-color: white;
+}
+
+.team .team-p{
+    margin: 30px 0px;
+}
+
+
+/* team members */
+.team .col-4{
+    padding: 0px 20px;
+    transition: 0.5s;
+}
+
+.team .col-4:hover{
+    animation-name: zoom;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.14, 1.21);
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes zoom {
+    0%{
+        scale: 150%;
+    }
+    100%{
+        scale: 100%;
+    }
+}
+
+.team .team-img-box{
+    background-color: rgba(72, 207, 173, 0.68);
+}
+.team .memebr-detail{
+    background-color: white;
+    color: #888;
+    padding: 30px;
+    line-height: 30px;
+}
+.team .team-social{
+    background-color: rgb(194, 182, 182);
+    padding: 5px;
+}
+.team .team-social .social-icons{
+    margin: 0px 5px;
+}
+
+/* ------------------------------------contact---------------------------------------------- */
+
+.contact{
+    padding: 50px 0px;
+    background-color: #ffce54;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.contact .contact-title{
+    padding: 30px;
+    font-size: 40px;
+}
+
+.contact .contact-p{
+    padding: 20px 0px;
+}
+
+/* contact-form */
+
+form{text-align: left;}
+
+.contact label{
+    color: #333333;
+    display: block;
+    font-weight: bold;
+}
+
+.contact .form-group{
+    margin-bottom: 20px;
+}
+
+.contact .form-control{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+}
+.contact textarea{
+    width: 100%;
+    height: 200px;
+}
+.contact .btnsend{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: left;
+}
+
+/* contact-methods */
+
+.contact-mathod-title{
+    padding: 20px 0px;
+}
+.contact-method-p{
+    border-right: 5px solid white;
+}
+#p3{border: none;}
+
+/* -----------------------footer------------------------------ */
+
+.footer{
+    width: 100%;
+    color: white;
+    background: url(images/fotterback.png);
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.856);
+    background-blend-mode: color;
+    text-align: center;
+    padding: 50px;
+}
+
+.footer .social-icons{
+    padding: 30px;
+}
+.footer .foot-icon{
+    margin: 0px 5px;
+}
+
+.footer .foot-quote{
+    padding: 20px 0px;
+    /* adds space between latters */
+    letter-spacing: 5px;
+}
+.footer p{
+    font-weight: bolder;
+}
+
+
+
+/* to make background of any selected text green */
+::selection{
+    background-color: #00b8b1;
+}
+
+
+

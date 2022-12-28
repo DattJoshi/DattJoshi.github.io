@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+:root{
+    --white:white;
+    --dark-yellow:#d8ac36;
+    --pri-yellow:#ffcc00;
+    --grey-font:#313243;
+    --grey-bg:#343434;
+    --skyblur-btn-bg:#00bec9;
+}
+
+/* utility classes */
+h3{
+    font-weight: bold;
+}
+.bg-dark-ylow{
+    background-color: var(--dark-yellow) !important;
+}
+.bg-ylo{
+    background-color: var(--pri-yellow) !important;
+}
+.bg-skyb{
+    background-color: var(--skyblur-btn-bg) !important;
+}
+.bg-grey{
+    background-color: var(--grey-bg) !important;
+}
+
+/* font color */
+.grey-font{
+    color: var(--grey-font) !important;
+}
+
+/* padding for sections */
+.pd-100{
+    padding: 100px 0px;
+}
+
+/* menu done by bootstrap */
+.nav-item:hover{
+    background-color: var(--pri-yellow);
+}
+/* section-1 black dog */
+.section1{
+    color: white;
+}
+
+.section1 h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.section1 p{
+    font-size: 20px;
+    font-weight: normal;
+    font-weight: 600;
+}
+
+@media screen and (max-width:770px) {
+    /* .section1{
+        position: relative;
+        z-index: -2;
+    }
+    .section1 .img-col{
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        z-index: -1;
+    } */
+    .pd-100{
+        padding: 3rem 0;
+    }
+    .section1 .row{
+        flex-direction: column-reverse;
+    }
+
+    /* section2 */
+    .section2 .row{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+/* section-2 dog treated */
+
+.our-service{
+    color: var(--grey-font);
+    border: 1px solid;
+    font-size: 20px;
+    
+}
+
+.our-service .img-container{
+    position: relative;
+    scale: 0.9;
+}
+.yellow-box{
+    bottom: -10%;
+    left: -10%;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: var(--pri-yellow);
+    z-index: -10;
+}
+.our-service .img-container::before{
+    content: "";
+    background-color: #ffcc00b1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#icon{
+    /* color: white; */
+    font-size: 50px;
+    color: var(--white);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    
+}
+
+/* section-3 title */
+.section3 p{
+    font-size: 20px;
+}
+
+/* section-4  mirror of section 2*/
+.section4 .our-service .img-container{
+    transform: rotateY(180deg);
+}
+
+/* section-5 Buy dog */
+/* buttton */
+.btn-custom{
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--skyblur-btn-bg);
+}
+
+/* section6 wetcare team */
+.section6 p{
+    font-size: 20px;
+}
+
+/* section-7 stats */
+.section7{
+    text-align: center;
+    font-weight: bold;
+   
+    color: var(--white);
+    background-image: url(/Assets/img/statsBG.jpg);
+    background-color:var(--pri-yellow);
+    background-blend-mode: overlay;
+
+}
+
+  form input,span{
+    outline: none !important;
+    border: none !important;
+    border-radius: 0% !important;
+  }
+
+  /* footer */
+  .icon-ul li a{
+    padding: 10px 13px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }

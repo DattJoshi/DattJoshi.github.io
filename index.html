@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/CSS/sitecss.css">
+
+
+    <title>DattJoshi-Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="dark-bg text-w">
+        <nav class="navbar navbar-expand-lg fw-bold">
+            <div class="container">
+                <a class="navbar-brand fs-3 text-w" href="#"><i class="fa-solid fa-code me-3"></i>My PortFolio</a>
+                <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- ------------hamburger Menu from code pen-------------- -->
+                    <div class="" onclick="this.classList.toggle('active')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
+                            <g stroke-width="6.5" stroke-linecap="round">
+                                <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                                <path
+                                    d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                                    fill="none" stroke="#fff" />
+                                <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                                <path
+                                    d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                                    fill="none" stroke="#fff" />
+                                <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                                <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                            </g>
+                        </svg>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse " id="menu">
+                    <div class="navbar-nav ms-auto ">
+                        <a class="nav-link text-w text-center" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-w text-center" href="#about">About</a>
+                        <a class="nav-link text-w text-center" href="#portfolio">Portfolio</a>
+                        <a class="nav-link text-w text-center" href="#contact">Contact</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+<!-- Hero Section -->
+<section class="hero py-5 text-light shadow-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 p-5">
+                <h1 class="fw-bold my-3 ">I am <span class="txt-bg">Datt</span> Joshi</h1>
+                <h4>Front End Web Designer</h4>
+                <a href="#about" class="btn text-light bg-grad rounded-5 mt-3">Know More About Me</a>
+        
+            </div>
+            <div class="col-md-6">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+  
+</section>
+
+<!-- Skils  -->
+<section class="skill-section">
+    <div class="container">
+        <h2 class="text-center py-3"><span class="border-custom">What I do?</span></h2>
+        <div class="row">
+            <div class="col-md-4"> 
+                <div class="skil-items">
+                    <div class="front flip">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Hyper Text Mark-up Langauge</p>
+                    </div>
+                    <div class="back flip">
+                        <i class="fa-solid fa-file-code"></i>
+                        <h3>PSD to HTML</h3>
+                        <p>Can Convert PhotoShop File to Pixel Perfect HTML Website Design</p>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="col-md-4">
+                <div class="skil-items">
+                    <div class="front flip ">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Cascading Style Sheet to Make Websites Beautiful</p>
+                    </div>
+                    <div class="back flip ">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <h3>BootStrap</h3>
+                        <p>a handy CSS Framework To Convert Your Imagination Into  Wonderfull WebSite</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skil-items">
+                    <div class="front flip">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Most Used Scripting Language</p>
+                    </div>
+                    <div class="back flip">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>Jquery</h3>
+                        <p>Using Jquery Code Will Be Compressed & Same Functionality Will Be Achieved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="portfolio py-3" id="portfolio">
+    <div class="container">
+        <h2 class="text-center py-3 text-light"><span class="border-custom">MY PROJECTS</span></h2>
+
+           
+            <!-- Responsive Websites -->
+
+            <h3 class="py-3 text-light">Responsive Websites</h3>
+        <div class="row">
+          
+             <!-- KindHeart Using FlexBox -->
+             <div class="col-md-4 ">
+                <div class="portfolio-item-box">
+                    <img src="assets/img/kindheart.PNG" alt="" class="img-fluid">
+                    <a href="assets/portfolioWeb/kindheart/index.html" target="_blank" class="overlay text-center">
+                        <i class="fa-sharp fa-solid fa-face-smile fs-2 overlay-icon"></i>
+                    </a>
+                    <p class="bg-grad text-light text-center py-2">KindHeart Charity Website</p>
+                </div>
+                
+            </div>
+
+            <!-- BurgerSite PSD to HTML -->
+            <div class="col-md-4">
+                <div class="portfolio-item-box">
+                    <img src="assets/img/burger2.PNG" alt="" class="img-fluid">
+                    <a href="assets/portfolioWeb/burger/index.html" target="_blank" class="overlay text-center">
+                        <i class="fa-sharp fa-solid fa-face-smile fs-2 overlay-icon"></i>
+                    </a>
+                    <p class="bg-grad text-light text-center py-2">Burger Website</p>
+                </div>
+            </div>
+
+              
+
+            <!-- DOG Website PSD to HTML -->
+            <div class="col-md-4">
+                <div class="portfolio-item-box">
+                    <img src="assets/img/dog.PNG" alt="" class="img-fluid">
+                    <a href="assets/portfolioWeb/dog/index.html" target="_blank" class="overlay text-center">
+                        <i class="fa-sharp fa-solid fa-face-smile fs-2 overlay-icon"></i>
+                    </a>
+                    <p class="bg-grad text-light text-center py-2">Dog Website</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+           <!-- Cyborg Web Site -->
+           <div class="col-md-4 ">
+            <div class="portfolio-item-box">
+                <img src="assets/img/cyborgSinglePage.PNG" alt="" class="img-fluid">
+                <a href="assets/portfolioWeb/cyborg/index.html" target="_blank" class="overlay text-center">
+                    <i class="fa-sharp fa-solid fa-face-smile fs-2 overlay-icon"></i>
+                </a>
+                <p class="bg-grad text-light text-center py-2">Cyborg Website</p>
+            </div>
+            
+        </div>
+
+            <!-- woox Travel Website -->
+            <div class="col-md-4 ">
+                <div class="portfolio-item-box">
+                    <img src="assets/img/woox.PNG" alt="" class="img-fluid">
+                    <a href="assets/portfolioWeb/woox/index.html" target="_blank" class="overlay text-center">
+                        <i class="fa-sharp fa-solid fa-face-smile fs-2 overlay-icon"></i>
+                    </a>
+                    <p class="bg-grad text-light text-center py-2">Woox Travel Website</p>
+                </div>
+                
+            </div>
+
+            <div class="col-md-4 ">
+                <div class="portfolio-item-box lh-lg text-light fs-3">
+                
+                <h4>Isn't This Amazing... <br> Check Out These Too <i class="fa-solid fa-hand-point-down"></i> </h4>
+                </div>
+            </div>
+
+          
+            </div>
+
+            <!-- Static websites -->
+        <h3 class="text-light py-3">Static Websites</h3>
+        
+
+        <div class="row">
+            <!-- Elegance  -->
+            <div class="col-md-4 ">
+                <div class="portfolio-item-box">
+                    <img src="assets/img/elegance.PNG" alt="" class="img-fluid">
+                    <a href="assets/portfolioWeb/elegance/index.html" target="_blank" class="overlay text-center">
+                        <i class="fa-sharp fa-solid fa-face-smile fs-2 overlay-icon"></i>
+                    </a>
+                    <p class="bg-grad text-light text-center py-2">Elegance Website</p>
+                </div>
+                
+            </div>
+
+            <!-- andia -->
+            <div class="col-md-4 ">
+                <div class="portfolio-item-box">
+                    <img src="assets/img/andia.PNG" alt="" class="img-fluid">
+                    <a href="assets/portfolioWeb/andia/index.html" target="_blank" class="overlay text-center">
+                        <i class="fa-sharp fa-solid fa-face-smile fs-2 overlay-icon"></i>
+                    </a>
+                    <p class="bg-grad text-light text-center py-2">Andia Website</p>
+                </div>
+                
+            </div>
+
+              <!-- Xeon Travel Website -->
+        <div class="col-md-4 ">
+            <div class="portfolio-item-box">
+                <img src="assets/img/xeon.PNG" alt="" class="img-fluid">
+                <a href="assets/portfolioWeb/xeon/index.html" target="_blank" class="overlay text-center">
+                    <i class="fa-sharp fa-solid fa-face-smile fs-2 overlay-icon"></i>
+                </a>
+                <p class="bg-grad text-light text-center py-2">Xeon Website</p>
+            </div>
+            
+        </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- About Me -->
+<section class="about py-3" id="about">
+    <div class="container">
+        <h2 class="text-center py-5"><span class="border-custom"><span class="border-custom">KNOW ME</span></span></h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 overflow-hidden">
+                <img src="assets/img/shadow.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 ">
+                <div class="about-intro">
+                    <p class="fs-2">Hello,</p>
+                    <p class="py-4">
+                        I am Datt Joshi an Engineering Graduate Currently learning a Course on a Web Designing. In this Course, I learned and developed Many Aspects of Front End Development like HTML, CSS, JavaScript, BootStrap, jquery, Responsive WebSite Design, PSD to HTML. I Would be More Than Happy if given Any Opportunity in the Frond End Role. With a little Guidance, I can Learn Much More In this Constantly Changing And Growing Field.I can Assure you to Provide Work With Full Satisfation in a Given Time Limit.Hoping To Hear From You Soon.You May Connect With Me on Linkedin By Clicking Button Below.           
+                    </p>
+
+                    
+                <a href="https://www.linkedin.com/in/datt-joshi-webdev/" class="btn bg-grad text-light d-block" target="_blank"><i class="fa-brands fa-linkedin fs-3 me-3"></i>Connect With Me</a>
+                
+            </div>
+                
+
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer & Social Links -->
+
+<section class="contact py-3 overflow-hidden" id="contact">
+    <div class="container">
+        <h3 class="text-center py-3"><span class="border-custom">CONTACT</span></h3>
+        <div class="row">
+            <div class="col-md-6">
+
+                
+                <ul class="list-unstyled lh-lg p-3">
+                    <li><h4>Connect With Me</h4></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100007452405303" target="_blank">
+                        <i class="fa-brands fa-square-facebook me-3"></i>Facebook
+                    </a></li>
+                    <li><a href="https://www.instagram.com/datt.joshi/" target="_blank">
+                        <i class="fa-brands fa-square-instagram me-3"></i>Instagram
+                    </a></li>
+                    <li><a href="www.linkedin.com/in/datt-joshi-Webdev" target="_blank">
+                        <i class="fa-brands fa-linkedin me-3"></i>Linkedin
+                    </a></li>
+                    <li><a href="https://github.com/DattJoshi" target="_blank">
+                        <i class="fa-brands fa-github me-3"></i>GitHub
+                    </a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled lh-lg p-3">
+                    <li><h4>Address</h4></li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-location-dot" style="color: #FF3D00;"></i>
+                        <address>
+                            Himmatnagar,<br>
+                            Sabarkantha-383001,<br>
+                            GUJARAT.
+                        </address>
+                    </li>
+                    <li class="tel">
+                        <i class="fa-solid fa-square-phone"></i><a href="tel:+91 7201030069">7201030069</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center bg-dark text-light py-3">
+    Copyright &copy; <script>document.write(new Date().getFullYear())</script> By Datt Joshi.
+</footer>
+
+
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
