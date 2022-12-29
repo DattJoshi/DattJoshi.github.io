@@ -40,11 +40,7 @@ background-color: var(--red-bg);
     right: 10px;
 }
 
-.menuSlider{
-    background: url(/assets/img/top-bg.png);
-    background-size: cover
 
-}
 
 .nav-item{
     letter-spacing: 2px;
@@ -190,7 +186,7 @@ footer{
     margin: 2%;
     padding: 100px 50px 0px;
     color: var(--white);
-    background-image: url(/assets/img/footer-bg.jpg);
+  
 }
 
 .foot-left{
