@@ -295,6 +295,18 @@ svg {
     padding: 5px 8px;
   }
 
+  .cv-btn{
+    display: block;
+    background-color: var(--dark-bg);
+    color: var(--pri-color);
+
+  }
+
+  .cv-btn:hover{
+    background-color: black;
+    color: var(--pri-color);
+  }
+
 
 
 /* Contact */
