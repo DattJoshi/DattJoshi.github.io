@@ -292,10 +292,21 @@ header{
     padding-top: 10px;
 }
 
+.left-arrow{
+    transform: rotateY(180deg);
+}
+
 @media screen and (max-width: 1200px){
     .slider-item img {
         height: 100%;
     }
+}
+
+@media screen  and (max-width:580px) {
+    .slider .slider-item .slider-text{
+       display: none;
+    }
+
 }
 
 
