@@ -287,6 +287,7 @@ svg {
   .about .about-intro{
     border: 2px solid var(--purple-sec);
     padding: 30px;
+    text-align: justify;
   }
 
   .about .or{
