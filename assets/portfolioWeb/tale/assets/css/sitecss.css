@@ -1,42 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
-:root{
-    --blue-clr:#5b03e4;
-    --pink-clr:#c03afe;
-    --white:white;
-    --light-font-clr:#a586bc;
+:root {
+    --blue-clr: #5b03e4;
+    --pink-clr: #c03afe;
+    --white: white;
+    --light-font-clr: #a586bc;
 }
 
-.bg-blue{
-   background-color: var(--blue-clr) !important;
+.bg-blue {
+    background-color: var(--blue-clr) !important;
 }
 
-.bg-pink{
+.bg-pink {
     background-color: var(--pink-clr) !important;
 }
 
-.bg-grad{
-    background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%) !important;
+.bg-grad {
+    background: linear-gradient(90deg, rgba(85, 0, 227, 1) 0%, rgba(198, 61, 255, 1) 100%) !important;
 
 }
 
-.light-font{
+.light-font {
     color: var(--light-font-clr);
 }
 
-.pink-clr{
+.pink-clr {
     color: var(--pink-clr);
 }
 
-.blue-clr{
+.blue-clr {
     color: var(--blue-clr);
 }
 
@@ -46,27 +46,27 @@ body{
     color: var(--light-font-clr);
 }
 
-.headertop a{
+.headertop a {
     text-decoration: none;
     color: var(--light-font-clr);
 }
 
 /* header */
 
-header{
-    background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+header {
+    background: linear-gradient(90deg, rgba(85, 0, 227, 1) 0%, rgba(198, 61, 255, 1) 100%);
     color: white;
-    
+
 }
 
 /* slider */
 
-.slider{
+.slider {
     position: relative;
     padding: 295px 0px 185px 0px;
 }
 
-.slider h1{
+.slider h1 {
     font-size: 52px;
     color: #2a2a2a;
     font-weight: 700;
@@ -74,24 +74,24 @@ header{
     margin-bottom: 20px;
 }
 
-.slider::before{
+.slider::before {
     display: block;
     content: url(../images/banner-left.png);
     width: 129px;
     height: 655px;
-    position: absolute;    
+    position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
 
 }
 
-.slider::after{
+.slider::after {
     display: block;
     content: url(../images/banner-right.png);
     /* width: 129px;
     height: 655px; */
-    position: absolute;    
+    position: absolute;
     right: 0;
     top: 0;
     z-index: -1;
@@ -99,10 +99,11 @@ header{
 }
 
 /* -------------------services------------------- */
-.service{
+.service {
     position: relative;
 }
-.service::before{
+
+.service::before {
     content: url(../images/services-left.jpg);
     position: absolute;
     left: 0;
@@ -110,7 +111,7 @@ header{
     z-index: -1;
 }
 
-.service::after{
+.service::after {
     content: url(../images/contact-left.jpg);
     position: absolute;
     right: 0;
@@ -121,17 +122,17 @@ header{
 
 /* -------------------work--------------------- */
 
-.work{
+.work {
     padding: 10% 0px;
     /* to hide cards overflowing */
     overflow: hidden;
 }
 
-.work .card a{
+.work .card a {
     text-align: center;
     height: 30px;
     width: 30px;
-    padding: 2px 3px ;
+    padding: 2px 3px;
     margin: auto;
     color: var(--blue-clr);
     border: none;
@@ -139,13 +140,13 @@ header{
     border-radius: 50%;
 }
 
-.work .card a i{
+.work .card a i {
     border: white;
 }
 
 /* -----------------------about--------------------- */
 
-.about{
+.about {
     background-image: url(../images/infos-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -153,44 +154,45 @@ header{
     padding: 10% 0;
 }
 
-.about img{
+.about img {
     display: block;
     object-fit: cover;
     height: 100%;
     border-radius: 5% 0 0 5%;
 }
 
-.right-info{
+.right-info {
     border-radius: 0% 5% 5% 0%;
 
 }
 
 @media screen and (max-width:1000px) {
 
-    .about img{
-       border-radius: 5% 5% 0 0;
-    
+    .about img {
+        border-radius: 5% 5% 0 0;
+
     }
-    .right-info{
+
+    .right-info {
         border-radius: 0 0 5% 5%;
 
     }
-    
+
 }
 
 
 /* ------------------Contact-------------- */
-.contact form .form-control{
+.contact form .form-control {
     background-color: rgba(214, 206, 218, 0.609);
     color: black;
     font-weight: bold;
     border-radius: 30px;
     border: none;
-    
+
 }
 
-.form-bottom{
-    background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%) ;
+.form-bottom {
+    background: linear-gradient(90deg, rgba(85, 0, 227, 1) 0%, rgba(198, 61, 255, 1) 100%);
     width: 100%;
     color: var(--white);
     margin-right: 0 !important;
@@ -200,21 +202,21 @@ header{
     bottom: 0; */
 }
 
-.contact form{
+.contact form {
     /* position: relative; */
     overflow: hidden;
     margin: auto;
 }
 
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10000;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -222,15 +224,19 @@ html{
 
 /* Owl Custom Css */
 
-.owl-nav .owl-prev span, .owl-nav .owl-next span{
-    font-size: 30px;
-    line-height: 30px;
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+    font-size: 35px;
+    line-height: 23px;
     background-color: #0d6efd;
     color: white;
-    padding: 0px 15px;
-    border-radius: 50%;
+    padding: 0px 22px 7px;
+    border-radius: 25%;
+    vertical-align: text-top;
 }
 
-.owl-nav .owl-prev:hover ,.owl-nav .owl-next:hover {
-  background-color:transparent !important;
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    background-color: transparent !important;
 }
+.owl-dot{visibility: hidden;}
