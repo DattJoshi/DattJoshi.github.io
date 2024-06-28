@@ -58,7 +58,10 @@ background:linear-gradient(90deg, rgba(83,36,184,1) 0%, rgba(9,9,121,1) 100%) ;
 }
 
 .bg-grad:hover{
-  background: linear-gradient(90deg, rgb(4, 2, 34) 0%, rgb(47, 47, 163) 35%,rgb(8, 111, 132) 100%); 
+  background: transparent;
+  color: white;
+  border: 1px solid;
+  /* background: linear-gradient(90deg, rgb(4, 2, 34) 0%, rgb(47, 47, 163) 35%,rgb(8, 111, 132) 100%);  */
 }
 .dark-bg{
     background-color: var(--dark-bg) !important;
@@ -300,6 +303,7 @@ svg {
     display: block;
     background-color: var(--dark-bg);
     color: var(--pri-color);
+    padding: 10px;
 
   }
 
