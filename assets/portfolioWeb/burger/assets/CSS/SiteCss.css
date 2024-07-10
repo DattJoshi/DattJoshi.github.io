@@ -113,12 +113,6 @@ background-color: var(--red-bg);
 
 
 }
-@media screen and (max-width:580px) {
-    .slider-left h1{
-        font-size: 3rem;
-    }
-}
-
 
 /* section-2 try it */
 .tryit-img{
@@ -131,6 +125,10 @@ background-color: var(--red-bg);
     position: absolute;
     left: 30px;
     top: 10px;
+}
+
+#section2 .tryit-img img {
+    margin-left: 0px !important;
 }
 
 /* section-4 events */
@@ -206,6 +204,23 @@ footer .row:last-child{
 }
 
 
+
+@media screen and (max-width:580px) {
+    .slider-left h1{
+        font-size: 3rem;
+    }
+
+    #section2 .tryit-img img {
+        padding-left: 0px;
+        
+    }
+
+    #section2 img {
+        padding: 0px;
+        
+    }
+   
+}
 
 
 
